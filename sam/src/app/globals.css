@@ -1,0 +1,25 @@
+.glass-nav {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(10, 10, 11, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-glow {
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(19, 55, 236, 0.15) 0%,
+    rgba(10, 10, 11, 0) 70%
+  );
+}
+
+.service-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.service-card:hover {
+  border-color: #1337ec;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px -10px rgba(19, 55, 236, 0.3);
+}
