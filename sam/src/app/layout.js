@@ -1,8 +1,17 @@
 import "./globals.css";
+import { Metadata } from 'next'
 
-export const metadata = {
-  title: "SAM | Engineering Digital Excellence",
-};
+// export const metadata Metadata = {
+//   title: {
+//     template: '%s SAM | Engineering Digital Excellence',
+//     default: 'SAM | Engineering Digital Excellence',
+//   },
+//   description: 'Build the future of your business with custom web applications. We specialize in fast, scalable, and SEO-optimized Next.js and React development tailored to your unique needs.',
+//   metadataBase: new URL('https://yourdomain.com'), // Required for absolute OG image paths
+//   openGraph: {
+//     images: '/og-image.png',
+//   },
+// }
 
 export default function RootLayout({ children }) {
   return (

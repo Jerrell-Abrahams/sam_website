@@ -6,9 +6,9 @@ export default function Footer() {
                     <div className="flex flex-col gap-6 md:col-span-1">
                         <div className="flex items-center gap-3">
                             <div className="text-primary">
-                                {/* <svg className="w-6 h-6" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <svg className="w-6 h-6" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
-                                </svg> */}
+                                </svg>
                             </div>
                             <h2 className="text-lg font-black tracking-tighter">SAM</h2>
                         </div>
@@ -55,7 +55,7 @@ export default function Footer() {
                     <p className="text-xs text-slate-500 dark:text-slate-500">© {new Date().getFullYear()} SAM Digital Engineering. All rights reserved.</p>
                     <div className="flex gap-6 text-xs text-slate-500 dark:text-slate-500">
                         <a className="hover:text-white" href="#">Privacy Policy</a>
-                        <a className="hover:text-white" href="#">Terms of Service</a>
+                        <a className="hover:text-white" href="/terms-of-service">Terms of Service</a>
                     </div>
                 </div>
             </footer>
