@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Pricing from "./components/Pricing";
 
 export default function Home() {
+  //home
   return (
     <>
       <Header />
