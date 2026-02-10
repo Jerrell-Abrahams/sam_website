@@ -1,150 +1,154 @@
-export default function TermsOfServices() {
+export default function TermsOfService() {
     return (
         <main className="flex-grow">
-
-            {/* Hero */}
             <section className="relative px-6 py-12 lg:px-20 lg:py-20 bg-gradient-to-b from-background-dark to-charcoal-glass">
-                <div className="max-w-5xl mx-auto">
+                <div className="max-w-[1200px] mx-auto">
                     <div className="flex flex-col gap-4">
                         <div className="flex items-center gap-2 text-primary font-medium text-sm uppercase tracking-wider">
                             <span className="material-symbols-outlined text-lg">gavel</span>
                             <span>Legal</span>
                         </div>
 
-                        <h1 className="text-4xl md:text-6xl font-black">
+                        <h1 className="text-4xl md:text-6xl font-black tracking-tight">
                             Terms of Service
                         </h1>
 
-                        <p className="text-gray-400 text-lg max-w-2xl">
-                            Please read these terms carefully before using our services. They
-                            outline the rules and regulations for the use of SAM’s website and
-                            services.
+                        <p className="text-slate-400 max-w-2xl">
+                            Please read these Terms of Service carefully before using SAM’s
+                            website or engaging our services.
                         </p>
 
-                        <div className="flex items-center gap-2 mt-4 text-sm text-gray-400 bg-white/5 w-fit px-3 py-1.5 rounded-full border border-white/10">
+                        <div className="flex items-center gap-2 mt-4 text-sm text-slate-400/80 bg-white/5 w-fit px-3 py-1.5 rounded-full border border-white/10">
                             <span className="material-symbols-outlined text-base">history</span>
-                            <span>Last updated: 09 February, 2026</span>
+                            <span>Last updated: February 09, 2026</span>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="max-w-5xl mx-auto px-6 py-12 flex flex-col gap-12 text-gray-300 leading-relaxed">
-
-                <section id="intro">
-                    <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white/10 text-primary text-sm">
-                            1
-                        </span>
-                        Introduction
-                    </h2>
+            <section className="max-w-[1200px] mx-auto px-6 lg:px-20 py-16 flex flex-col gap-12 text-slate-300 leading-relaxed">
+                <section id="intro" className="scroll-mt-28">
+                    <h2 className="text-2xl font-bold text-white mb-4">1. Introduction</h2>
                     <p className="mb-4">
-                        Welcome to SAM ("we", "our", or "us"). By accessing or using our
-                        website and services, you agree to be bound by these Terms of
-                        Service. If you do not agree, please do not use our services.
+                        Welcome to SAM (“we”, “our”, or “us”). By accessing our website or
+                        using our services, you agree to be bound by these Terms of Service
+                        (“Terms”). If you do not agree, you must not use our services.
                     </p>
                     <p>
                         We may update these Terms from time to time. Continued use of our
-                        services after changes constitutes acceptance of the updated Terms.
+                        services after changes are posted constitutes acceptance of the
+                        revised Terms.
                     </p>
                 </section>
 
-                <section id="definitions" className="pt-8 border-t border-white/10">
-                    <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white/10 text-primary text-sm">
-                            2
-                        </span>
-                        Definitions
-                    </h2>
-                    <ul className="list-disc pl-5 space-y-3 marker:text-primary">
-                        <li>
-                            <strong className="text-white">Client:</strong> Any individual or
-                            entity engaging SAM for services.
-                        </li>
-                        <li>
-                            <strong className="text-white">Deliverables:</strong> The final
-                            work products created by SAM under an agreed scope.
-                        </li>
-                        <li>
-                            <strong className="text-white">Confidential Information:</strong>{" "}
-                            Non-public information disclosed by either party.
-                        </li>
+                {/* 2. Definitions */}
+                <section id="definitions" className="scroll-mt-28 border-t border-white/10 pt-8">
+                    <h2 className="text-2xl font-bold text-white mb-4">2. Definitions</h2>
+                    <ul className="list-disc pl-5 space-y-3">
+                        <li><strong className="text-white">Client:</strong> Any individual or entity engaging SAM.</li>
+                        <li><strong className="text-white">Services:</strong> Website development, hosting, maintenance, and custom development.</li>
+                        <li><strong className="text-white">Deliverables:</strong> All work products provided under an agreement or SOW.</li>
+                        <li><strong className="text-white">Confidential Information:</strong> Non-public business or technical information.</li>
                     </ul>
                 </section>
 
-                <section id="scope" className="pt-8 border-t border-white/10">
-                    <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white/10 text-primary text-sm">
-                            3
-                        </span>
-                        Scope of Services
-                    </h2>
+                {/* 3. Scope of Services */}
+                <section id="scope" className="scroll-mt-28 border-t border-white/10 pt-8">
+                    <h2 className="text-2xl font-bold text-white mb-4">3. Scope of Services</h2>
                     <p className="mb-4">
-                        SAM provides website development, custom software, hosting, and
-                        maintenance services as defined in the agreed project scope.
+                        SAM provides fixed-price digital services including custom website
+                        development, hosting, and ongoing maintenance as agreed in writing.
                     </p>
-
-                    <div className="bg-white/5 p-6 rounded-lg border border-white/10">
-                        <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            {[
-                                "Website & Web App Development",
-                                "Custom Software Solutions",
-                                "Hosting & Maintenance",
-                                "Technical Consulting",
-                            ].map((item) => (
-                                <li key={item} className="flex items-start gap-2">
-                                    <span className="material-symbols-outlined text-primary text-sm mt-1">
-                                        check_circle
-                                    </span>
-                                    <span className="text-sm">{item}</span>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+                    <p>
+                        Services are performed primarily after business hours and on
+                        weekends, unless otherwise agreed.
+                    </p>
                 </section>
 
                 {/* 4. Client Obligations */}
-                <section id="obligations" className="pt-8 border-t border-white/10">
-                    <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white/10 text-primary text-sm">
-                            4
-                        </span>
-                        Client Obligations
-                    </h2>
+                <section id="obligations" className="scroll-mt-28 border-t border-white/10 pt-8">
+                    <h2 className="text-2xl font-bold text-white mb-4">4. Client Obligations</h2>
                     <ol className="list-decimal pl-5 space-y-3">
-                        <li>Provide required content and access on time.</li>
-                        <li>Review and approve deliverables promptly.</li>
-                        <li>
-                            Ensure all supplied materials do not violate third-party rights.
-                        </li>
+                        <li>Provide timely access to content, credentials, and approvals.</li>
+                        <li>Ensure supplied materials do not infringe third-party rights.</li>
+                        <li>Review deliverables promptly to avoid delays.</li>
                     </ol>
                 </section>
 
-                {/* 5. Payments */}
-                <section id="payments" className="pt-8 border-t border-white/10">
-                    <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white/10 text-primary text-sm">
-                            5
-                        </span>
-                        Payment Terms
-                    </h2>
+                {/* 5. Payment Terms */}
+                <section id="payments" className="scroll-mt-28 border-t border-white/10 pt-8">
+                    <h2 className="text-2xl font-bold text-white mb-4">5. Payment Terms</h2>
+                    <p className="mb-4">
+                        All pricing is fixed unless otherwise stated. Invoices are payable
+                        within the agreed timeframe.
+                    </p>
                     <p>
-                        Payments are fixed-price and due according to the agreed payment
-                        schedule. All fees are non-refundable once work has commenced unless
-                        otherwise agreed in writing.
+                        Late payments may result in suspension of services and may accrue
+                        interest at the maximum rate permitted by law.
                     </p>
                 </section>
 
-                <section className="pt-8 border-t border-white/10">
-                    <h2 className="text-2xl font-bold text-white mb-4">
-                        Additional Terms
-                    </h2>
-                    <ul className="space-y-3">
-                        <li>Intellectual property transfers upon full payment.</li>
-                        <li>Both parties must maintain confidentiality.</li>
-                        <li>Services are provided “as is” without guarantees.</li>
-                        <li>Liability is limited to fees paid.</li>
-                        <li>Governing law: Republic of South Africa.</li>
+                {/* 6. Intellectual Property */}
+                <section id="intellectual" className="scroll-mt-28 border-t border-white/10 pt-8">
+                    <h2 className="text-2xl font-bold text-white mb-4">6. Intellectual Property</h2>
+                    <p className="mb-4">
+                        Upon full payment, the Client receives ownership of final
+                        Deliverables, excluding SAM’s pre-existing tools and frameworks.
+                    </p>
+                    <p>
+                        SAM retains rights to its background technology and may reuse
+                        non-confidential concepts.
+                    </p>
+                </section>
+
+                {/* 7. Confidentiality */}
+                <section id="confidentiality" className="scroll-mt-28 border-t border-white/10 pt-8">
+                    <h2 className="text-2xl font-bold text-white mb-4">7. Confidentiality</h2>
+                    <p>
+                        Both parties agree to keep Confidential Information private unless
+                        disclosure is required by law.
+                    </p>
+                </section>
+
+                {/* 8. Termination */}
+                <section id="termination" className="scroll-mt-28 border-t border-white/10 pt-8">
+                    <h2 className="text-2xl font-bold text-white mb-4">8. Term & Termination</h2>
+                    <p>
+                        Either party may terminate for material breach with written notice.
+                        Fees for work completed remain payable.
+                    </p>
+                </section>
+
+                {/* 9. Warranties */}
+                <section id="warranties" className="scroll-mt-28 border-t border-white/10 pt-8">
+                    <h2 className="text-2xl font-bold text-white mb-4">9. Warranties</h2>
+                    <p>
+                        Services are provided “as is” except where explicitly stated
+                        otherwise.
+                    </p>
+                </section>
+
+                {/* 10. Limitation of Liability */}
+                <section id="liability" className="scroll-mt-28 border-t border-white/10 pt-8">
+                    <h2 className="text-2xl font-bold text-white mb-4">10. Limitation of Liability</h2>
+                    <p>
+                        SAM shall not be liable for indirect or consequential damages. Total
+                        liability is limited to fees paid in the preceding 12 months.
+                    </p>
+                </section>
+
+                {/* 11–15. Misc */}
+                <section id="misc" className="scroll-mt-28 border-t border-white/10 pt-8">
+                    <h2 className="text-2xl font-bold text-white mb-4">11–15. Miscellaneous</h2>
+                    <ul className="list-disc pl-5 space-y-3">
+                        <li>Force Majeure</li>
+                        <li>Indemnification</li>
+                        <li>Severability</li>
+                        <li>Entire Agreement</li>
+                        <li>
+                            <strong className="text-white">Governing Law:</strong> Republic of
+                            South Africa
+                        </li>
                     </ul>
                 </section>
 

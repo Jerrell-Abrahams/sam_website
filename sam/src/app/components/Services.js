@@ -17,7 +17,7 @@ export default function OurServices() {
                             <span className="material-symbols-outlined text-3xl">draw</span>
                         </div>
                         <div className="flex flex-col gap-3">
-                            <h4 className="text-xl font-bold">Web Design</h4>
+                            <h4 className="text-xl font-bold">Custom Web Design</h4>
                             <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
                                 Beyond aesthetics. We focus on conversion-optimized UX/UI and cohesive brand identities that resonate with modern audiences.
                             </p>
@@ -64,29 +64,32 @@ export default function OurServices() {
                     </div>
                     <div className="service-card bg-white dark:bg-[#111218] p-10 rounded-2xl flex flex-col gap-6">
                         <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
-                            <span className="material-symbols-outlined text-3xl">shopping_bag</span>
+                            <span className="material-symbols-outlined text-3xl">language</span>
                         </div>
+
                         <div className="flex flex-col gap-3">
-                            <h4 className="text-xl font-bold">E-commerce</h4>
+                            <h4 className="text-xl font-bold">Web App Standards</h4>
                             <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
-                                Scalable online stores designed to handle millions in revenue while providing a seamless, premium shopping journey.
+                                Clean, modern websites built to establish your online presence and grow alongside your business.
                             </p>
                         </div>
+
                         <ul className="flex flex-col gap-3 mt-4">
                             <li className="flex items-center gap-2 text-xs font-medium text-slate-400">
                                 <span className="material-symbols-outlined text-primary text-sm">check_circle</span>
-                                Shopify Plus Custom Dev
+                                Responsive & Mobile-First Design
                             </li>
                             <li className="flex items-center gap-2 text-xs font-medium text-slate-400">
                                 <span className="material-symbols-outlined text-primary text-sm">check_circle</span>
-                                Conversion Rate Optimization
+                                Fast & SEO-Friendly Pages
                             </li>
                             <li className="flex items-center gap-2 text-xs font-medium text-slate-400">
                                 <span className="material-symbols-outlined text-primary text-sm">check_circle</span>
-                                Payment Gateway Security
+                                Strong focus on Digital Presence and your Business Image 
                             </li>
                         </ul>
                     </div>
+
                 </div>
             </div>
 
