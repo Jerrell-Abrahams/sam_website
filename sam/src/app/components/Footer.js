@@ -54,7 +54,7 @@ export default function Footer() {
                 <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-slate-200 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-xs text-slate-500 dark:text-slate-500">© {new Date().getFullYear()} SAM Digital Engineering. All rights reserved.</p>
                     <div className="flex gap-6 text-xs text-slate-500 dark:text-slate-500">
-                        <a className="hover:text-white" href="/privacy-policy">Privacy Policy</a>
+                        <a className="hover:text-white" href="#">Privacy Policy</a>
                         <a className="hover:text-white" href="/terms-of-service">Terms of Service</a>
                     </div>
                 </div>

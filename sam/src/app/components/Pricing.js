@@ -12,7 +12,7 @@ export default function Pricing() {
             </span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-extrabold tracking-tight text-gray-900 dark:text-white mb-6">
+          <h1 id='pricing' className="text-4xl sm:text-5xl md:text-6xl font-display font-extrabold tracking-tight text-gray-900 dark:text-white mb-6">
             Transparent Pricing for <br className="hidden sm:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">
               Digital Presence.
@@ -74,7 +74,7 @@ export default function Pricing() {
             </ul>
 
             <a
-              href="#"
+              href="/contact-us"
               className="block w-full py-3 px-4 bg-gray-100 dark:bg-white/5 hover:bg-primary hover:text-white font-semibold text-center rounded-lg transition"
             >
               Get Started
@@ -128,7 +128,7 @@ export default function Pricing() {
               ))}
             </ul>
             <a
-              href="#"
+              href="/contact-us"
               className="block w-full py-3 px-4 bg-primary hover:bg-primary/90 text-white font-semibold text-center rounded-lg shadow-lg shadow-primary/25 transition"
             >
               Get Started
@@ -174,7 +174,7 @@ export default function Pricing() {
             </ul>
 
             <a
-              href="#"
+              href="/contact-us"
               className="block w-full py-3 px-4 bg-gray-100 dark:bg-white/5 hover:bg-primary hover:text-white font-semibold text-center rounded-lg transition"
             >
               Enquire Now

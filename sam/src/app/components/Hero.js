@@ -1,3 +1,5 @@
+
+
 export default function Hero() {
     return (
         <section className="relative min-h-[90vh] flex items-center overflow-hidden">
@@ -16,13 +18,13 @@ export default function Hero() {
                         We craft premium digital experiences that combine high-end aesthetics with cutting-edge engineering. Tailored for the modern era.
                     </p>
                     <div className="flex flex-wrap gap-4 pt-4">
-                        <button className="bg-primary hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-base font-bold transition-all flex items-center gap-2">
-                            Explore Our Work
+                        <a href="/contact-us" className="bg-primary hover:scale-[.9] hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-base font-bold transition-all flex items-center gap-2">
+                            Get In Touch
                             <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                        </button>
-                        <button className="bg-white/5 dark:bg-white/5 hover:bg-white/10 border border-slate-200 dark:border-white/10 px-8 py-4 rounded-lg text-base font-bold transition-all">
+                        </a>
+                        <a href="#services" className="bg-white/5 dark:bg-white/5 hover:bg-white/10 hover:scale-[.9] border border-slate-200 dark:border-white/10 px-8 py-4 rounded-lg text-base font-bold transition-all">
                             View Services
-                        </button>
+                        </a>
                     </div>
                     <div className="flex items-center gap-6 pt-8 grayscale opacity-50">
                         <span className="text-xs font-bold uppercase tracking-widest text-slate-500">Trusted by:</span>
@@ -55,7 +57,7 @@ export default function Hero() {
                                 <div className="bg-primary h-full w-[99%]"></div>
                             </div>
                         </div>
-                         <div className="absolute bottom-12 right-12 p-6 rounded-2xl glass-nav border border-primary/30 w-64 shadow-2xl">
+                        <div className="absolute bottom-12 right-12 p-6 rounded-2xl glass-nav border border-primary/30 w-64 shadow-2xl">
                             <div className="flex justify-between items-center mb-4">
                                 <span className="text-[10px] font-bold text-primary tracking-widest">PERFORMANCE</span>
                                 <span className="text-lg font-black">99%</span>
