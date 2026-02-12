@@ -82,7 +82,7 @@ export default function AboutSection() {
                 </div>
 
                 {/* Team */}
-                <section>
+                {/* <section>
                     <div className="mb-12 max-w-xl">
                         <h2 className="text-3xl font-black text-slate-900 dark:text-white mb-4">
                             Meet the team
@@ -134,7 +134,7 @@ export default function AboutSection() {
                             </div>
                         ))}
                     </div>
-                </section>
+                </section> */}
             </div>
         </section>
     );
