@@ -1,5 +1,3 @@
-
-
 export default function Hero() {
     return (
         <section className="relative min-h-[90vh] flex items-center overflow-hidden">
@@ -27,45 +25,92 @@ export default function Hero() {
                         </a>
                     </div>
                     <div className="flex items-center gap-6 pt-8 grayscale opacity-50">
-                        <span className="text-xs font-bold uppercase tracking-widest text-slate-500">Trusted by:</span>
-                        <div className="flex gap-8">
-                            <span className="font-black text-sm italic">LOCALFOCAL</span>
+                        {/* <span className="text-xs font-bold uppercase tracking-widest text-slate-500">Trusted by:</span> */}
+                        {/* <div className="flex gap-8">
+                            <span className="font-black text-sm italic">LOCAL FOCAL</span>
                             <span className="font-black text-sm italic">ANIMALORTHO</span>
-                            <span className="font-black text-sm italic">PIELOUENS</span>
-                        </div>
+                            <span className="font-black text-sm italic"></span>
+                        </div> */}
                     </div>
                 </div>
                 <div className="relative hidden lg:block">
-                    <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-slate-800 to-black border border-white/10 shadow-2xl">
-                        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&amp;w=2564&amp;auto=format&amp;fit=crop')] bg-cover bg-center opacity-40 mix-blend-overlay" data-alt="Abstract 3D digital flow pattern with blue accents"></div>
-                        <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
-                        <div className="absolute top-10 left-10 p-4 rounded-xl glass-nav border border-white/20 animate-bounce" style={{ "animation-duration": "4s" }}>
-                            <div className="flex gap-2">
-                                <div className="w-3 h-3 rounded-full bg-red-500/50"></div>
-                                <div className="w-3 h-3 rounded-full bg-yellow-500/50"></div>
-                                <div className="w-3 h-3 rounded-full bg-green-500/50"></div>
+                    <div className="bg-white/5 border border-white/10 rounded-2xl p-5 md:p-6 shadow-xl max-w-md mx-auto">
+                        <form className="space-y-4">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label className="block text-xs font-medium mb-1">
+                                        Full Name
+                                    </label>
+                                    <input
+                                        type="text"
+                                        placeholder="John Doe"
+                                        className="w-full rounded-lg bg-black/30 border border-white/10 px-3 py-2 text-sm focus:border-primary focus:ring-primary"
+                                    />
+                                </div>
+                                <div>
+                                    <label className="block text-xs font-medium mb-1">
+                                        Email
+                                    </label>
+                                    <input
+                                        type="email"
+                                        placeholder="john@company.com"
+                                        className="w-full rounded-lg bg-black/30 border border-white/10 px-3 py-2 text-sm focus:border-primary focus:ring-primary"
+                                    />
+                                </div>
                             </div>
-                            <div className="mt-4 h-2 w-24 bg-white/10 rounded"></div>
-                            <div className="mt-2 h-2 w-16 bg-white/10 rounded"></div>
-                        </div>
-                        <div className="absolute bottom-12 right-12 p-6 rounded-2xl glass-nav border border-primary/30 w-64 shadow-2xl">
-                            <div className="flex justify-between items-center mb-4">
-                                <span className="text-[10px] font-bold text-primary tracking-widest">PERFORMANCE</span>
-                                <span className="text-lg font-black">99%</span>
+                            <div>
+                                <label className="block text-xs font-medium mb-1">
+                                    Service Interest
+                                </label>
+                                <select className="w-full rounded-lg bg-black/30 border border-white/10 px-3 py-2 text-sm">
+                                    <option>Select a service</option>
+                                    <option>Website Development</option>
+                                    <option>Custom Software</option>
+                                    <option>Hosting & Maintenance</option>
+                                    <option>Other</option>
+                                </select>
                             </div>
-                            <div className="w-full bg-white/5 h-1 rounded-full overflow-hidden">
-                                <div className="bg-primary h-full w-[99%]"></div>
+                            <div>
+                                <label className="block text-xs font-medium mb-1 flex items-center gap-1">
+                                    Budget Range
+                                    <div>
+                                        <abbr title="Your budget range helps us tailor our services to your needs." className="text-gray-400 cursor-help no-underline">?</abbr>
+                                    </div>
+                                </label>
+                                <input
+                                    type="text"
+                                    placeholder="R0 - R10,000"
+                                    className="w-full rounded-lg bg-black/30 border border-white/10 px-3 py-2 text-sm focus:border-primary focus:ring-primary"
+                                />
                             </div>
-                        </div>
-                        <div className="absolute bottom-12 right-12 p-6 rounded-2xl glass-nav border border-primary/30 w-64 shadow-2xl">
-                            <div className="flex justify-between items-center mb-4">
-                                <span className="text-[10px] font-bold text-primary tracking-widest">PERFORMANCE</span>
-                                <span className="text-lg font-black">99%</span>
+                            <div>
+                                <label className="block text-xs font-medium mb-1">
+                                    Project Details
+                                </label>
+                                <textarea
+                                    rows={3}
+                                    placeholder="Tell us about your project, timeline, and goals..."
+                                    className="w-full rounded-lg bg-black/30 border border-white/10 px-3 py-2 text-sm"
+                                />
                             </div>
-                            <div className="w-full bg-white/5 h-1 rounded-full overflow-hidden">
-                                <div className="bg-primary h-full w-[99%]"></div>
+                            <div className="pt-1">
+                                <button
+                                    type="submit"
+                                    className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-primary hover:bg-primary/90 font-bold text-sm transition shadow-lg shadow-primary/30"
+                                >
+                                    Send Message
+                                    <span className="material-symbols-outlined text-base">
+                                        arrow_forward
+                                    </span>
+                                </button>
+                                <p className="mt-3 text-[11px] text-center text-gray-500">
+                                    By submitting this form, you agree to our{" "}
+                                    <a href="/privacy" className="underline hover:text-primary">
+                                        Privacy Policy
+                                    </a>.
+                                </p>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>

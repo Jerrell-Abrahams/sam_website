@@ -12,7 +12,7 @@ export default function OurServices() {
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div className="service-card bg-white dark:bg-[#111218] p-10 rounded-2xl flex flex-col gap-6">
+                    <div className="service-card bg-white dark:bg-[#111218] p-10 rounded-2xl flex flex-col gap-6 animate-fade-in-up delay-100">
                         <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
                             <span className="material-symbols-outlined text-3xl">draw</span>
                         </div>
@@ -37,7 +37,7 @@ export default function OurServices() {
                             </li>
                         </ul>
                     </div>
-                    <div className="service-card bg-white dark:bg-[#111218] p-10 rounded-2xl flex flex-col gap-6">
+                    <div className="service-card bg-white dark:bg-[#111218] p-10 rounded-2xl flex flex-col gap-6 animate-fade-in-up delay-200">
                         <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
                             <span className="material-symbols-outlined text-3xl">code</span>
                         </div>
@@ -62,7 +62,7 @@ export default function OurServices() {
                             </li>
                         </ul>
                     </div>
-                    <div className="service-card bg-white dark:bg-[#111218] p-10 rounded-2xl flex flex-col gap-6">
+                    <div className="service-card bg-white dark:bg-[#111218] p-10 rounded-2xl flex flex-col gap-6 animate-fade-in-up delay-300">
                         <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
                             <span className="material-symbols-outlined text-3xl">language</span>
                         </div>

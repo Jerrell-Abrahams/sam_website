@@ -1,4 +1,17 @@
+'use client'
+
+import { useState } from "react";
+
 export default function Footer() {
+    const [showToast, setShowToast] = useState(false);
+    const [email, setEmail] = useState("");
+    const handleSubscribe = (e) => {
+        e.preventDefault();
+        setShowToast(true);
+        setEmail("");
+        setTimeout(() => setShowToast(false), 3000);
+    };
+
     return (
         <footer className="bg-background-light dark:bg-[#050506] border-t border-slate-200 dark:border-white/5 py-16">
             <footer className="bg-background-light dark:bg-[#050506] border-t border-slate-200 dark:border-white/5 py-16">
@@ -27,27 +40,40 @@ export default function Footer() {
                     <div className="flex flex-col gap-6">
                         <h5 className="text-xs font-bold uppercase tracking-widest text-slate-900 dark:text-white">Services</h5>
                         <ul className="flex flex-col gap-3 text-sm text-slate-500 dark:text-slate-400 font-light">
-                            <li><a className="hover:text-primary transition-colors" href="#">Web Design</a></li>
-                            <li><a className="hover:text-primary transition-colors" href="#">E-commerce</a></li>
-                            <li><a className="hover:text-primary transition-colors" href="#">Custom App Dev</a></li>
-                            <li><a className="hover:text-primary transition-colors" href="#">SEO &amp; Performance</a></li>
+                            <li><a className="hover:text-primary transition-colors" href="#services">Web Design</a></li>
+                            <li><a className="hover:text-primary transition-colors" href="/contact-us">Custom App Dev</a></li>
+                            <li><a className="hover:text-primary transition-colors" href="/contact-us">SEO &amp; Performance</a></li>
                         </ul>
                     </div>
                     <div className="flex flex-col gap-6">
                         <h5 className="text-xs font-bold uppercase tracking-widest text-slate-900 dark:text-white">Company</h5>
                         <ul className="flex flex-col gap-3 text-sm text-slate-500 dark:text-slate-400 font-light">
-                            <li><a className="hover:text-primary transition-colors" href="#">Case Studies</a></li>
-                            <li><a className="hover:text-primary transition-colors" href="#">Our Approach</a></li>
-                            <li><a className="hover:text-primary transition-colors" href="#">Careers</a></li>
-                            <li><a className="hover:text-primary transition-colors" href="#">Contact</a></li>
+                            <li><a className="hover:text-primary transition-colors" href="/about-us">Our Approach</a></li>
+                            <li><a className="hover:text-primary transition-colors" href="/contact-us">Contact</a></li>
                         </ul>
                     </div>
                     <div className="flex flex-col gap-6">
                         <h5 className="text-xs font-bold uppercase tracking-widest text-slate-900 dark:text-white">Newsletter</h5>
                         <p className="text-sm text-slate-500 dark:text-slate-400 font-light">Stay updated with our latest insights.</p>
+                        {showToast && (
+                            <div className="fixed left-1/2 top-24 z-50 -translate-x-1/2 bg-primary text-white px-6 py-3 rounded-lg shadow-lg animate-fade-in-up">
+                                Successfully subscribed to the newsletter!
+                            </div>
+                        )}
                         <div className="flex flex-col gap-3">
-                            <input className="bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-primary transition-all" placeholder="Email address" type="email" />
-                            <button className="bg-primary text-white font-bold py-3 rounded-lg text-sm transition-all hover:bg-blue-700">Subscribe</button>
+                            <form onSubmit={handleSubscribe} className="flex flex-col gap-3">
+                                <input
+                                    className="bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-primary transition-all"
+                                    placeholder="Email address"
+                                    type="email"
+                                    value={email}
+                                    onChange={e => setEmail(e.target.value)}
+                                    required
+                                />
+                                <button type="submit" className="bg-primary text-white font-bold py-3 rounded-lg text-sm transition-all hover:bg-blue-700">
+                                    Subscribe
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>

@@ -13,14 +13,14 @@ export default function Contact() {
                         <p className="text-blue-100 text-lg lg:text-xl font-light leading-relaxed">
                             Join high-growth brands and let's turn your vision into a high-performance digital reality. Our calendar is filling fast.
                         </p>
-                        <div className="flex flex-wrap justify-center gap-4 mt-4">
+                        {/* <div className="flex flex-wrap justify-center gap-4 mt-4">
                             <button className="bg-white text-primary hover:bg-slate-100 px-10 py-5 rounded-xl text-lg font-bold transition-all shadow-xl hover:scale-105">
                                 Book a Strategy Call
                             </button>
                             <button className="bg-primary/20 hover:bg-primary/30 text-white border border-white/30 px-10 py-5 rounded-xl text-lg font-bold transition-all backdrop-blur-md">
                                 View Pricing
                             </button>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

@@ -3,51 +3,7 @@ export default function PrivacyPolicy() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12">
       <div className="lg:grid lg:grid-cols-12 lg:gap-12">
         {/* Sidebar Navigation */}
-        <aside className="hidden lg:block lg:col-span-3">
-          <div className="sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto sidebar-scroll pr-4">
-            <h5 className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-4 pl-3">
-              Contents
-            </h5>
-            <nav className="space-y-1">
-              <a
-                href="#introduction"
-                className="block px-3 py-2 text-sm font-medium rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-neutral-dark hover:text-primary dark:hover:text-primary transition-colors"
-              >
-                Introduction
-              </a>
-              <a
-                href="#info-collect"
-                className="block px-3 py-2 text-sm font-medium rounded-lg bg-primary/10 text-primary dark:text-primary-light border-l-2 border-primary"
-              >
-                Information We Collect
-              </a>
-              <a
-                href="#purpose"
-                className="block px-3 py-2 text-sm font-medium rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-neutral-dark hover:text-primary dark:hover:text-primary transition-colors"
-              >
-                Purpose of Processing
-              </a>
-              <a
-                href="#security"
-                className="block px-3 py-2 text-sm font-medium rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-neutral-dark hover:text-primary dark:hover:text-primary transition-colors"
-              >
-                Data Security
-              </a>
-              <a
-                href="#rights"
-                className="block px-3 py-2 text-sm font-medium rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-neutral-dark hover:text-primary dark:hover:text-primary transition-colors"
-              >
-                Your Rights (POPIA)
-              </a>
-              <a
-                href="#contact"
-                className="block px-3 py-2 text-sm font-medium rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-neutral-dark hover:text-primary dark:hover:text-primary transition-colors"
-              >
-                Information Officer
-              </a>
-            </nav>
-          </div>
-        </aside>
+       
 
         {/* Main Content */}
         <main className="lg:col-span-9 space-y-16">
@@ -57,8 +13,8 @@ export default function PrivacyPolicy() {
               <span className="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-primary/10 text-primary dark:text-primary-light">
                 POPIA Compliant
               </span>
-              <span className="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-slate-100 dark:bg-neutral-dark text-slate-600 dark:text-slate-400">
-                Last Updated: Oct 24, 2023
+              <span className="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-slate-100 dark:bg-neutral-dark text-slate-600 dark:text-black-500">
+                Last Updated: Oct 24, 2025
               </span>
             </div>
             <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white tracking-tight mb-6">
@@ -108,28 +64,28 @@ export default function PrivacyPolicy() {
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               {/* Identity & Contact Data */}
-              <div className="bg-white dark:bg-surface-dark rounded-xl p-6 border border-slate-200 dark:border-neutral-dark shadow-sm">
+              <div className="bg-black dark:bg-surface-dark rounded-xl p-6 border border-slate-200 dark:border-neutral-dark shadow-sm">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                  <span className="material-icons text-primary">badge</span>
+                  <span className="material-symbols-outlined text-primary">badge</span>
                 </div>
                 <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">
                   Identity &amp; Contact Data
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-sm text-slate-600 dark:text-slate-400">
-                    <span className="material-icons text-primary text-base mt-0.5">
+                    <span className="material-symbols-outlined text-primary text-sm mt-0.5">
                       check_circle
                     </span>
                     First name, maiden name, last name.
                   </li>
                   <li className="flex items-start gap-2 text-sm text-slate-600 dark:text-slate-400">
-                    <span className="material-icons text-primary text-base mt-0.5">
+                    <span className="material-symbols-outlined text-primary text-sm mt-0.5">
                       check_circle
                     </span>
                     Email address and telephone numbers.
                   </li>
                   <li className="flex items-start gap-2 text-sm text-slate-600 dark:text-slate-400">
-                    <span className="material-icons text-primary text-base mt-0.5">
+                    <span className="material-symbols-outlined text-primary text-sm mt-0.5">
                       check_circle
                     </span>
                     Billing address and delivery address.
@@ -138,28 +94,28 @@ export default function PrivacyPolicy() {
               </div>
 
               {/* Technical & Usage Data */}
-              <div className="bg-white dark:bg-surface-dark rounded-xl p-6 border border-slate-200 dark:border-neutral-dark shadow-sm">
+              <div className="bg-black dark:bg-surface-dark rounded-xl p-6 border border-slate-200 dark:border-neutral-dark shadow-sm">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                  <span className="material-icons text-primary">devices</span>
+                  <span className="material-symbols-outlined text-primary">devices</span>
                 </div>
                 <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">
                   Technical &amp; Usage Data
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-sm text-slate-600 dark:text-slate-400">
-                    <span className="material-icons text-primary text-base mt-0.5">
+                    <span className="material-symbols-outlined text-primary text-sm mt-0.5">
                       check_circle
                     </span>
                     IP address, browser type and version.
                   </li>
                   <li className="flex items-start gap-2 text-sm text-slate-600 dark:text-slate-400">
-                    <span className="material-icons text-primary text-base mt-0.5">
+                    <span className="material-symbols-outlined text-primary text-sm mt-0.5">
                       check_circle
                     </span>
                     Time zone setting and location.
                   </li>
                   <li className="flex items-start gap-2 text-sm text-slate-600 dark:text-slate-400">
-                    <span className="material-icons text-primary text-base mt-0.5">
+                    <span className="material-symbols-outlined text-primary text-sm mt-0.5">
                       check_circle
                     </span>
                     Operating system and platform.

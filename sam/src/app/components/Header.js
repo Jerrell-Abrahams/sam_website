@@ -23,9 +23,9 @@ export default function Header() {
           <a className="text-sm font-medium text-slate-400 hover:text-white transition-colors" href="#pricing">
             Pricing
           </a>
-          <a className="text-sm font-medium text-slate-400 hover:text-white transition-colors" href="#work">
+          {/* <a className="text-sm font-medium text-slate-400 hover:text-white transition-colors" href="#work">
             Work
-          </a>
+          </a> */}
           <a className="text-sm font-medium text-slate-400 hover:text-white transition-colors" href="/about-us">
             About
           </a>
